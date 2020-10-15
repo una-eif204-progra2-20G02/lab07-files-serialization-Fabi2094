@@ -12,14 +12,13 @@ class Person {
 private:
     int id;
     int age;
-public:
-    virtual ~Person();
-
-private:
     std::string name;
+
+
 public:
     Person(int id, int age, const std::string &name);
-
+    
+    virtual ~Person();
 
     int getId() const;
 
