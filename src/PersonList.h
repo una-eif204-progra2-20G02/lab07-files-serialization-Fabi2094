@@ -14,10 +14,15 @@ private:
     std::vector<Person> personList;
 public:
     PersonList();
+
     ~PersonList();
+
     void addPerson(Person person);
+
     Person getPerson(int position);
+
     int getListSize();
+
     std::string toString();
 
 };

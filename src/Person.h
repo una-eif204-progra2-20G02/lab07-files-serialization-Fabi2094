@@ -17,6 +17,7 @@ private:
 
 public:
     virtual ~Person();
+
     Person(int id, int age, const std::string &name);
 
 

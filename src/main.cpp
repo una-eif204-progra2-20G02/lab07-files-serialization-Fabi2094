@@ -5,15 +5,16 @@
 #include "PersonList.h"
 
 #include<iostream>
+
 using namespace std;
 
 
 int main() {
     PersonList personList;
 
-    Person person1(123456789, 25,"Fabiana");
-    Person person2(1987654321,60,"Susana");
-    Person person3(456123789,30,"Miguel");
+    Person person1(123456789, 25, "Fabiana");
+    Person person2(1987654321, 60, "Susana");
+    Person person3(456123789, 30, "Miguel");
     cout << person1.toString();
 
 
@@ -23,5 +24,5 @@ int main() {
 
     cout << personList.toString();
 
-return 0;
+    return 0;
 };
