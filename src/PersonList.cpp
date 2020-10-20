@@ -25,11 +25,11 @@ int PersonList::getListSize() {
     return personList.size();
 }
 
-std::string PersonList::toString() {
-    std::ostringstream output;
+string PersonList::toString() {
+    stringstream s;
     for (int i; i < personList.size(); i++) {
-        output << personList[i].toString();
+        s << personList[i].toString();
     }
-    return output.str();
+    return s.str();
 }
 

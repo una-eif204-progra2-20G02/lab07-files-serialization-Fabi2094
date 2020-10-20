@@ -5,20 +5,26 @@
 #ifndef LAB07_FILES_SERIALIZATION_FABI2094_PERSON_H
 #define LAB07_FILES_SERIALIZATION_FABI2094_PERSON_H
 
-
-#include <sstream>
 #include <iomanip>
+#include <sstream>
+#include <fstream>
+#include <iostream>
+#include <ostream>
+#include <vector>
+
+using namespace std;
+
 
 class Person {
 private:
     int id;
     int age;
-    std::string name;
+    string name;
 
 public:
     virtual ~Person();
 
-    Person(int id, int age, const std::string &name);
+    Person(int id, int age, const string &name);
 
 
     int getId() const;
@@ -29,11 +35,11 @@ public:
 
     void setAge(int age);
 
-    const std::string &getName() const;
+    const string &getName() const;
 
-    void setName(const std::string &name);
+    void setName(const string &name);
 
-    std::string toString();
+    string toString();
 
 
 };

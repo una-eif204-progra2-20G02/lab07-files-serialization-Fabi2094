@@ -7,11 +7,11 @@
 
 
 #include"Person.h"
-#include<vector>
+#include "IPersonSave.h"
 
 class PersonList {
 private:
-    std::vector<Person> personList;
+   vector<Person> personList;
 public:
     PersonList();
 
@@ -23,7 +23,9 @@ public:
 
     int getListSize();
 
-    std::string toString();
+    string toString();
+
+
 
 };
 
